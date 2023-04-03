@@ -2,6 +2,7 @@ import React from "react";
 import RouterLink from "../util/RouterLink";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
+import routes from "./routes";
 
 const RouterButton = (props) => {
   const { path, text } = props;
@@ -23,7 +24,7 @@ const ContentsList = () => {
     <Grid container spacing={4}>
       <Grid item xs={6}>
         <RouterButton
-          path={"/counting-props"}
+          path={routes.drilling.bc}
           text={"Counting With State (props)"}
         />
       </Grid>
