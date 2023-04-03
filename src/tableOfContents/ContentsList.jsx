@@ -1,5 +1,5 @@
 import React from "react";
-import RouterLink from "../util/RouterLink";
+import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import routes from "./routes";
@@ -8,7 +8,7 @@ const RouterButton = (props) => {
   const { path, text } = props;
   return (
     <Button
-      component={RouterLink}
+      component={Link}
       to={path}
       variant={"outlined"}
       color={"primary"}
@@ -30,7 +30,7 @@ const ContentsList = () => {
       </Grid>
       <Grid item xs={6}>
         <RouterButton
-          path={"/counting-redux"}
+          path={routes.redux.bc}
           text={"Counting With State (redux)"}
         />
       </Grid>
