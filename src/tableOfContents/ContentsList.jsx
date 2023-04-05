@@ -40,27 +40,12 @@ const ContentsList = () => {
           text={"Altering Text (props)"}
         />
       </Grid>
-      {/* <Grid item xs={6}>
-        <RouterButton
-          path={"/state-func-props"}
-          text={"State and Funcs as Props"}
-        />
-      </Grid>
       <Grid item xs={6}>
         <RouterButton
-          path={"/state-func-props-solution"}
-          text={"State and Funcs as Props (Solution)"}
+          path={routes.redux.cards}
+          text={"Altering Text (redux)"}
         />
       </Grid>
-      <Grid item xs={6}>
-        <RouterButton path={"/intro-to-redux"} text={"Intro to Redux"} />
-      </Grid>
-      <Grid item xs={6}>
-        <RouterButton
-          path={"/intro-to-redux-solution"}
-          text={"Intro to Redux (Solution)"}
-        />
-      </Grid> */}
     </Grid>
   );
 };

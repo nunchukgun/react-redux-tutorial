@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import bc from "./exercises/redux/button-counter/BCSlice";
+import BCSlice from "./exercises/redux/button-counter/BCSlice";
+import ATSlice from "./exercises/redux/altering-text/ATSlice";
 export const store = configureStore({
   reducer: {
-    bc,
+    bc: BCSlice,
+    at: ATSlice,
   },
 });
