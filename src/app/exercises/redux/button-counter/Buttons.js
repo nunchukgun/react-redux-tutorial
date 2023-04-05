@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 
 const Buttons = () => {
   const dispatch = useDispatch();
+  console.log(dispatch);
   const count = useSelector((state) => state.bc.count);
 
   const dispatchNewCount = (newCount) => dispatch(setCount(newCount));
@@ -15,6 +16,7 @@ const Buttons = () => {
         size={"large"}
         variant={"contained"}
         onClick={() => dispatchNewCount(count - 5)}
+        data-testid="-5"
       >
         -5
       </Button>
@@ -22,6 +24,7 @@ const Buttons = () => {
         size={"large"}
         variant={"contained"}
         onClick={() => dispatchNewCount(count - 1)}
+        data-testid="-1"
       >
         -1
       </Button>
@@ -29,6 +32,7 @@ const Buttons = () => {
         size={"large"}
         variant={"contained"}
         onClick={() => dispatchNewCount(0)}
+        data-testid="reset"
       >
         RESET
       </Button>
@@ -36,6 +40,7 @@ const Buttons = () => {
         size={"large"}
         variant={"contained"}
         onClick={() => dispatchNewCount(count + 1)}
+        data-testid="+1"
       >
         +1
       </Button>
@@ -43,6 +48,7 @@ const Buttons = () => {
         size={"large"}
         variant={"contained"}
         onClick={() => dispatchNewCount(count * 2)}
+        data-testid="*2"
       >
         x2
       </Button>
