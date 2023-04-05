@@ -1,12 +1,16 @@
 const props = "/props";
 const redux = "/redux";
+const bc = '/button-counter'
+const cards = '/cards'
 
 const routes = {
   drilling: {
-    bc: props + "/button-counter",
+    bc: props + bc,
+    cards: props + cards
   },
   redux: {
-    bc: redux + "/button-counter",
+    bc: redux + bc,
+    cards: redux + cards
   },
 };
 

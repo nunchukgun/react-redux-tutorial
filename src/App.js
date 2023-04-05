@@ -4,6 +4,7 @@ import Home from "./tableOfContents/Home";
 import routes from "./tableOfContents/routes";
 import BCProps from "./app/exercises/props-drilling/button-counter/ButtonCounter";
 import BCRedux from "./app/exercises/redux/button-counter/ButtonCounter";
+import AlteringText from "./app/exercises/props-drilling/altering-text/AlteringText";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const App = () => {
     {
       path: routes.redux.bc,
       element: <BCRedux />,
+    },
+    {
+      path: routes.drilling.cards,
+      element: <AlteringText />,
     },
   ]);
 

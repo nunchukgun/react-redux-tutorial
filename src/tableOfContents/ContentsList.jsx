@@ -34,6 +34,12 @@ const ContentsList = () => {
           text={"Counting With State (redux)"}
         />
       </Grid>
+      <Grid item xs={6}>
+        <RouterButton
+          path={routes.drilling.cards}
+          text={"Altering Text (props)"}
+        />
+      </Grid>
       {/* <Grid item xs={6}>
         <RouterButton
           path={"/state-func-props"}
