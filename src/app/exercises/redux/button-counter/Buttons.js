@@ -5,7 +5,6 @@ import { Button } from "@mui/material";
 
 const Buttons = () => {
   const dispatch = useDispatch();
-  console.log(dispatch);
   const count = useSelector((state) => state.bc.count);
 
   const dispatchNewCount = (newCount) => dispatch(setCount(newCount));
