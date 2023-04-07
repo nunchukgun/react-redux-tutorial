@@ -14,6 +14,7 @@ const OrangeCard = () => {
       <TextField
         fullWidth
         value={textToChange}
+        inputProps={{ "data-testid": "orange_card_input" }}
         onChange={(event) => dispatchMessageText(event.target.value)}
       />
     </Card>
