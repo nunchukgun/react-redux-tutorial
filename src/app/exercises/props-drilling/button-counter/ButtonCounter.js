@@ -11,7 +11,7 @@ import Buttons from "./Buttons";
 const cardTitle = <Typography variant={"h3"}>Button Counter</Typography>;
 
 const ButtonCounter = () => {
-  const [count, setCount] = useState(11);
+  const [count, setCount] = useState(0);
 
   return (
     <Card
