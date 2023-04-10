@@ -12,7 +12,9 @@ import Buttons from "./Buttons";
 const cardTitle = <Typography variant={"h3"}>Button Counter</Typography>;
 
 const ButtonCounter = () => {
-  const count = useSelector((state) => state.bc.count);
+  const count = useSelector((state) => {
+    return state.bc.count;
+  });
 
   return (
     <Card

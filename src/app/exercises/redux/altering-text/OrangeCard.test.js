@@ -37,7 +37,6 @@ describe("OrangeCard", () => {
   it("updates text onChange", () => {
     render(<OrangeCard />);
     const textElem = screen.getByTestId("orange_card_input");
-    console.log(textElem);
     fireEvent.change(textElem, { target: { value: "newText" } });
 
     expect(setMessageText).toHaveBeenCalledTimes(1);
